@@ -40,9 +40,17 @@ let myName = 'Jaynie';
 myName = 'Jayne'; // redefinition is allowed
 
 let currentDay = "Monday";
-//let currentDay = 'Tuesday'; //this will cause a TypeError
+//Below will cause a TypeError
+//let currentDay = 'Tuesday';
 
+// -- Declarations with const -- //
+let users = ['Flash', 'Spiderman', '']
+const MAX_USERS = 3;
 
+/* The following would either cause a TypeError,
+or silently fail depending on the JavaScript engine */ 
+//MAX_USERS = 5;
 
-
-//Declarations with const
+if (users.length > MAX_USERS) {
+  console.log('too many users');
+}
