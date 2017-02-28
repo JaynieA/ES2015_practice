@@ -48,7 +48,7 @@ let users = ['Flash', 'Spiderman', '']
 const MAX_USERS = 3;
 
 /* The following would either cause a TypeError,
-or silently fail depending on the JavaScript engine */ 
+or silently fail depending on the JavaScript engine */
 //MAX_USERS = 5;
 
 if (users.length > MAX_USERS) {
