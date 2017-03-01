@@ -78,3 +78,36 @@ displayTags(...data);
 // Arrow functions fix this bug.
 
 //Using arrow functions to preserve scope:
+function TagComponent(target, urlPath) {
+  this.targetElement = target;
+  this.urlPath = urlPath;
+} // end tagComponent
+
+TagComponent.prototype.render = function() {
+  getRequest(this.urlPath, (data) => { // arrow function used here
+    let tags = data.tags;
+    //using arrow functions, the following this.targetElement would NOT have scoping issues
+    //whereas without arrow functions, it would be undefined
+    displayTags(this.targetElement, ...tags);
+  }); // end getRequest
+}; // end render
+
+let tagComponent = new TagComponent('targetDiv', '/topics/17/divs');
+//tagComponent.render();
+
+//Arrow Function Declaration examples
+
+let sayHi = ()=> {
+  console.log('Hi!');
+}; // end sayHi
+
+sayHi();
+
+let doSomethingElse = (...things) => {
+   for(let i in things){
+     let thing = things[i];
+     console.log(thing);
+   } // end for
+}; // end doSomethingElse
+
+doSomethingElse('hi', 'my', 'name', 'is', 'jaynie', '!');
