@@ -62,3 +62,11 @@ Client-side JavaScript, focused on practical implementation of the most general 
 ### Maps
 
   * Maps are a data structure composed of a collection of key/value pairs. They are very useful to store simple data, such as property values.
+    * When using objects as maps, it's keys are always turned to strings.
+  * The map object is a simple key/value data structure that allows any value to be used either as a key or a value, and objects are not converted to strings.
+    * Use maps when keys are unknown until runtime
+    * Use maps when all keys are the same type and all values are the same type (Objects when some values are different than others).
+    * Maps are iterable, so they can be used in `for...of` loops. Each run of the loop returns a `[key, value]` pair for an entry in the Map.
+  * The `Weakmap` is a type of Map where only objects can be passed as keys. Primitive data types (strings, numbers, booleans, etc.) are not allowed.
+    * `WeakMap`'s are not iterable.
+    * `Weakmap`'s are memory efficient because they don't prevent the garbage collector from collecting objects currently used as keys, but that are no longer referenced anywhere else in the system.
