@@ -70,3 +70,12 @@ Client-side JavaScript, focused on practical implementation of the most general 
   * The `Weakmap` is a type of Map where only objects can be passed as keys. Primitive data types (strings, numbers, booleans, etc.) are not allowed.
     * `WeakMap`'s are not iterable.
     * `Weakmap`'s are memory efficient because they don't prevent the garbage collector from collecting objects currently used as keys, but that are no longer referenced anywhere else in the system.
+
+### Sets
+
+  * The `Set` object stores unique values of any type, whether primitive values or object references.
+    * The `add()` method adds elements to a set.
+    * Set objects are iterable, so we can use them with `for...of` and destructuring.
+  * The `WeakSet` is a more memory efficient type of `Set`
+    * Only objects are allowed to be stored in `WeakSet`'s
+    * `WeakSet`'s cannot be used with `for...of` and they offer no methods for reading values from it.
