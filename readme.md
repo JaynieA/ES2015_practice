@@ -37,3 +37,13 @@ Client-side JavaScript, focused on practical implementation of the most general 
     * Used in function invocations
   * Arrow functions:
     * Preserve Scope: arrow functions bind to the scope of where they are defined (lexical binding), not where they are used.
+
+# Objects and Strings
+
+ * Object initializer shorthand: remove duplicate variable names from object properties when those properties have the same name as the variable being assigned to them.
+    * This works anywhere a function is returned (not just in function returns).
+ * Object destructuring: we can use shorthand to assign properties from objects to local variables with the same name.
+ * Template Strings: string literals allowing embedded expressions. This allows for a much better way to do string interpolation, as well as preserves line breaks.
+    * Enclosed by back-ticks, and code is wrapped inside dollar sign and curly braces
+ * Object.assign copies properties from one or more source objects to a target object specified as the very first argument.
+    * In case of duplicate properties on source objects, the value from the last object on the chain always prevails.

@@ -1,5 +1,3 @@
-console.log('app.js sourced');
-
 // ** -- Variable Declarations -- ** //
 
 // -- Declarations with var -- //
