@@ -47,3 +47,18 @@ Client-side JavaScript, focused on practical implementation of the most general 
     * Enclosed by back-ticks, and code is wrapped inside dollar sign and curly braces
  * Object.assign copies properties from one or more source objects to a target object specified as the very first argument.
     * In case of duplicate properties on source objects, the value from the last object on the chain always prevails.
+
+# Arrays, Maps, and Sets
+
+### Arrays
+
+  * Array destructuring: used to assign multiple values from an array to local variables.
+    * We can combine destructuring with rest parameters to group values into other arrays.
+  * `for...of` Loop Statement iterates over property values, and offers a better way to loop over arrays and other iterable objects.
+    * the `for...of` statement cannot be used to iterate over properties in plain JavaScript objects out-of-the-box.
+    * In order to be able to work with `for...of`, an object needs a special function assigned to the `Symbol.iterator` property. The presence of this property allows us to know whether an object is iterable.
+  * `Array.find`: returns the first element in the array that satisfies a provided testing function.
+
+### Maps
+
+  * Maps are a data structure composed of a collection of key/value pairs. They are very useful to store simple data, such as property values.
