@@ -79,3 +79,11 @@ Client-side JavaScript, focused on practical implementation of the most general 
   * The `WeakSet` is a more memory efficient type of `Set`
     * Only objects are allowed to be stored in `WeakSet`'s
     * `WeakSet`'s cannot be used with `for...of` and they offer no methods for reading values from it.
+
+# Classes and Modules
+
+### Classes
+
+  * Using the new class syntax, we can write better object oriented code
+    * The `constructor` method is a special method for creating and initializing an object
+    * The `extends` keyword is used to create a class that inherits methods and properties from another class. The `super` method runs the constructor function from the parent class.
