@@ -28,7 +28,8 @@ class SponsorWidget {
   }
 
   render() { //instance method definition
-    let link = this._buildLink(this.url);
+    console.log('in SponsorWidget render function ');
+    //let link = this._buildLink(this.url);
 
   }
 }

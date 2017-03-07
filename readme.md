@@ -86,4 +86,8 @@ Client-side JavaScript, focused on practical implementation of the most general 
 
   * Using the new class syntax, we can write better object oriented code
     * The `constructor` method is a special method for creating and initializing an object
-    * The `extends` keyword is used to create a class that inherits methods and properties from another class. The `super` method runs the constructor function from the parent class.
+    * The class syntax is not introducing a new object model to JavaScript. It's just introducing a different way to do it than the existing prototype-based inheritance.
+    * Class Inheritance:
+      * We can use class inheritance to reduce code repetition. Child classes (sub classes) inherit and specialize behavior defined in parent classes.
+      * The `extends` keyword is used to create a class that inherits methods and properties from another class. The `super` method (which must be called in the first line of the child constructor) runs the constructor function from the parent class.
+      * Child classes can invoke methods from their parent classes via the `super` object.
