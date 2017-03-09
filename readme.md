@@ -91,3 +91,10 @@ Client-side JavaScript, focused on practical implementation of the most general 
       * We can use class inheritance to reduce code repetition. Child classes (sub classes) inherit and specialize behavior defined in parent classes.
       * The `extends` keyword is used to create a class that inherits methods and properties from another class. The `super` method (which must be called in the first line of the child constructor) runs the constructor function from the parent class.
       * Child classes can invoke methods from their parent classes via the `super` object.
+
+### Modules
+  * Files `flash-message.js` and `app.js` demonstrate module usage.
+  * The `export` keyword exposes module functions to the module system.
+  * To import modules, we use the `import` keyword, specify a new local variable to hold its content, and use the `from` keyword to tell the JavaScript engine where the module can be found.
+  * Modules still need to be imported via a `<script>` tag, but no longer pollute the global namespace.
+  * Must be run from an environment which supports ES6 Module syntax
