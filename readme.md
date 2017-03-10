@@ -104,3 +104,12 @@ Client-side JavaScript, focused on practical implementation of the most general 
     * Redefining hard-coded constants across an application is unnecessary repetition and can lead to bugs
     * Placing constants on their own module allows them to be reused across other modules and hides implementation details (encapsulation).
   * Classes can also be exported from modules using the same syntax as functions.
+
+# Promises, Iterators, and Generators
+
+### Promieses
+  * In continuation passing style (CPS), we tell a function how to continue execution by passing callbacks. It can grow into complicated nested code.
+  * A promise is a new abstraction that allows us to write async code in an easier way.
+  * The promise constructor function takes an anonymous function with 2 callback arguments known as handlers. Handlers either `resolve` or `reject` the promise.
+  * Creating a promise automatically sets it to the pending state. Then, it can do 1 of 2 things: become fulfilled or rejected.
+    * A promise returns a future value, such as the eventual result of an asynchronous operation.
