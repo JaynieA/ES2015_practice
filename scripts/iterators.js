@@ -39,3 +39,12 @@ posts[Symbol.iterator] = function() {
 for (let p of posts) {
   console.log(p);
 }
+
+//Using iterable objects with spread operator
+let values = [...posts]; //groups property values and return an array
+console.log(values);
+
+//Iterables with destructuring
+let [ title, replies ] = posts;
+console.log( title );
+console.log( replies );

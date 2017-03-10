@@ -119,9 +119,10 @@ Client-side JavaScript, focused on practical implementation of the most general 
     * Once an error occurs, execution moves immediately to the `catch()` function. None of the remaining `then()` functions are invoked.
 
 ### Iterators
-  * Iterabales return an interator object. This object knows how to access items from a collection 1 at a time, while keeping track of it's current position within a sequence.
+  * Iterabales return an iterator object. This object knows how to access items from a collection 1 at a time, while keeping track of it's current position within a sequence.
   * Understanding the next method: Each time `next()` is called, it returns an object with 2 specific properties (`done` and `value`).
     * `done` will be false if the iterator is able to return a value from the collection. It will be true if the iterator is past the end of the collection.
     * `value` will be the value returned by the iterator. If `done` is true, it returns `undefined`.
   * An iterator is an object with a `next` property, returned by the result of calling the `Symbol.iterator` object.
-  * We can use `Object.keys` to build an array with property names for our Object. We'll also 
+  * We can use `Object.keys` to build an array with property names for an Object
+  * Objects that comply with the iterable protocol can also be used with the spread operator.
