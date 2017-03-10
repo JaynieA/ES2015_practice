@@ -126,3 +126,9 @@ Client-side JavaScript, focused on practical implementation of the most general 
   * An iterator is an object with a `next` property, returned by the result of calling the `Symbol.iterator` object.
   * We can use `Object.keys` to build an array with property names for an Object
   * Objects that comply with the iterable protocol can also be used with the spread operator.
+
+### Generators
+  * The `function *` declaration defines generator functions. These are special functions from which we can use the `yield` keyword to return iterator objects.
+    * Arguments passed to `yield` are automatically assigned to the value property
+  * Generator functions return objects which provide the same `next` method expected by `for...of`, the spread operator, and the destructuring assignment.
+  * Provides a great way to refactor custom iterator objects into generator functions
