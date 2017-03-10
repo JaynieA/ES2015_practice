@@ -93,8 +93,14 @@ Client-side JavaScript, focused on practical implementation of the most general 
       * Child classes can invoke methods from their parent classes via the `super` object.
 
 ### Modules
+  * NOTE: Must be run from an environment which supports ES6 Module syntax.
+  * Modules help to avoid polluting the global namespace.
   * Files `flash-message.js` and `app.js` demonstrate module usage.
   * The `export` keyword exposes module functions to the module system.
   * To import modules, we use the `import` keyword, specify a new local variable to hold its content, and use the `from` keyword to tell the JavaScript engine where the module can be found.
   * Modules still need to be imported via a `<script>` tag, but no longer pollute the global namespace.
-  * Must be run from an environment which supports ES6 Module syntax
+  * We can also import the entire module (using `*`) as an object and call each function as a property from this object.
+  * Extracting hard-coded Constants (`load-profiles.js` and `constants.js`)
+    * Redefining hard-coded constants across an application is unnecessary repetition and can lead to bugs
+    * Placing constants on their own module allows them to be reused across other modules and hides implementation details (encapsulation).
+  * Classes can also be exported from modules using the same syntax as functions.
