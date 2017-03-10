@@ -113,3 +113,7 @@ Client-side JavaScript, focused on practical implementation of the most general 
   * The promise constructor function takes an anonymous function with 2 callback arguments known as handlers. Handlers either `resolve` or `reject` the promise.
   * Creating a promise automatically sets it to the pending state. Then, it can do 1 of 2 things: become fulfilled or rejected.
     * A promise returns a future value, such as the eventual result of an asynchronous operation.
+  * We can use the `then()` method to read results from the Promise once it's resolved. This method takes a function that will only be invoked once the Promise is resolved.
+    * We can also chain multiple calls to `then()` - the return value from 1 call is passed as an argument to the next one.
+  * The `reject()` handler is called for unsuccessful status codes and and also when the `onerror` event is triggered on our request object. Both move the promise to a rejected state.
+    * Once an error occurs, execution moves immediately to the `catch()` function. None of the remaining `then()` functions are invoked.
